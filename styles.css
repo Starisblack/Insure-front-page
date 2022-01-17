@@ -300,3 +300,15 @@ h5 {
     background-repeat: no-repeat;
   }
 }
+
+@media (max-width: 350px) {
+  .social-icon {
+    position: relative;
+    right: 30px;
+  }
+
+  .footer-brand {
+    position: relative;
+    left: 90px;
+  }
+}
