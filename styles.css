@@ -1,0 +1,302 @@
+body {
+  font-family: 'DM Serif Display', serif;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+ to { opacity: 1;
+   transform: rotateX(0);
+  }
+}
+/* Navigation Bar */
+.navbar-brand {
+  font-family: 'Karla', sans-serif;
+  font-size: 2rem;
+}
+
+.navbar {
+  padding: 1% 10%;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+/* Title Section */
+.container-fluid {
+  padding: 5% 15%;
+  background-color: hsl(256, 26%, 20%);
+  animation: fadeIn 2s;
+}
+
+.img1 {
+  position: absolute;
+  left: 0;
+  top: 530px;
+}
+
+.img2 {
+  position: absolute;
+  height: 70%;
+  right: 0;
+  top: 88px;
+  z-index: 2;
+}
+
+.mobile-img {
+  visibility: hidden;
+  position: absolute;
+}
+
+hr {
+  border-top: 3px solid white;
+  width: 30%;
+  display: block;
+  float: left;
+  margin-bottom: 50px;
+}
+
+h1, p {
+  color: white;
+}
+
+.head-div {
+  margin-top: 50px;
+}
+
+.text-heading {
+  font-size: 4.5rem;
+}
+
+.sub-headtext {
+  line-height: 2;
+  margin-top: 15px;
+}
+
+.head-img {
+  position: absolute;
+  z-index: 1;
+  margin-left: 50px;
+}
+
+/* features */
+#features {
+  margin-top: 200px;
+  animation: fadeIn 2s;
+}
+
+.feature-heading hr {
+  border-top: 3px solid grey;
+  width: 15%;
+  display: block;
+  float: left;
+  margin-bottom: 50px;
+  opacity: 60%;
+}
+
+.feature-container {
+  background-color: white;
+}
+
+.feature-text h1 {
+  color: black;
+  clear: left;
+  margin-bottom: 50px;
+}
+
+.feature-box p {
+  color: black;
+  opacity: 50%;
+}
+
+.feature-img {
+  width: 20%;
+  margin-bottom: 30px;
+}
+
+/* Work */
+#work .container-fluid {
+  padding: 3%;
+  background-image: url("images/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.work-box {
+  width: 70%;
+}
+
+.work1-text {
+  width: 75%;
+}
+
+.work2-text {
+  float: right;
+  margin-top: 30px;
+}
+
+/* footer */
+#footer .container-fluid {
+  background-color: hsl(0, 0%, 98%);
+  margin-top: 50px;
+  padding: 3%;
+  background-image: url("images/bg-pattern-footer-desktop.svg");
+  background-repeat: no-repeat;
+}
+
+.footer-box {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-line {
+  border-top: 3px solid grey;
+  width: 100%;
+  opacity: 30%;
+}
+
+.fab {
+  margin: 15px;
+  opacity: 50%;
+}
+
+.footer-brand {
+  color: black;
+  font-family: 'Karla', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.footer-extra {
+  width: 80%;
+  margin-left: 120px;
+}
+
+h5 {
+  margin: 20px 0;
+  font-family: 'Karla', sans-serif;
+  opacity: 60%;
+}
+
+.list {
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+  color: black;
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  body {
+    align-items: center;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  .head-img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .text-heading {
+    font-size: 3rem;
+    clear: both;
+  }
+
+  .sub-headtext {
+    width: 70%;
+    margin: 0 auto 30px auto;
+  }
+
+  .head-div {
+    text-align: center;
+    padding-bottom: 90px;
+  }
+
+  .head-div hr {
+    visibility: hidden;
+  }
+
+  .img1, .img2 {
+    visibility: hidden;
+  }
+
+  .mobile-img {
+    visibility: visible;
+  }
+
+  .left-mobile {
+    position: absolute;
+    left: 0;
+    top: -55px;
+  }
+
+  .right-mobile {
+    position: absolute;
+    right: 15px;
+    bottom: -180px;
+  }
+
+  .feature-container {
+    width: 80%;
+    text-align: center;
+  }
+
+  .feature-box p {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .feature-heading hr {
+    width: 30%;
+    display: block;
+    margin: 0 auto 50px auto;
+    opacity: 60%;
+    float: none;
+  }
+
+  #work .container-fluid {
+    padding: 10% 5%;
+    background-image: url("images/bg-pattern-how-we-work-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .work-box {
+    text-align: center;
+    width: 70%;
+  }
+
+  .work1-text {
+    width: 90%;
+  }
+
+  .work2-text {
+    float: none;
+    margin-top: 30px;
+  }
+
+  .footer-brand {
+    position: relative;
+    left: 100px;
+  }
+
+  .social-icon {
+    position: relative;
+    right: 90px;
+  }
+
+  #footer .container-fluid {
+    background-image: url("images/bg-pattern-footer-mobile.svg");
+    background-repeat: no-repeat;
+  }
+}
